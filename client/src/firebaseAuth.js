@@ -1,8 +1,14 @@
-import {getAuth,
+import {
+  getAuth,
+  sendSignInLinkToEmail,
   GoogleAuthProvider,
   signInWithEmailLink,
   isSignInWithEmailLink,
-  signOut
+  signOut,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+  sendPasswordResetEmail
 } from "firebase/auth";
 import {initializeApp} from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -26,7 +32,7 @@ const firebaseConfig = {
    const googleAuthProvider = new GoogleAuthProvider();
    
 
-   export { auth, signOut, googleAuthProvider,signInWithEmailLink, isSignInWithEmailLink};
+   export { auth, signOut,sendPasswordResetEmail, googleAuthProvider,signInWithPopup, sendSignInLinkToEmail, signInWithEmailLink, isSignInWithEmailLink ,signInWithEmailAndPassword,createUserWithEmailAndPassword };
   
   
   
